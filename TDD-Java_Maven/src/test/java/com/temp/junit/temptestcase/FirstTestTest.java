@@ -1,5 +1,7 @@
 package com.temp.junit.temptestcase;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.*;
 
 /**
@@ -39,4 +41,21 @@ public class FirstTestTest
     void secondTest() {
         System.out.println("Second test First method");
     }
+    
+    @Test
+    @DisplayName("Second test")
+    void addTest() {
+        int c = FirstTest.add(10,10);
+    	assertEquals(30,c);
+        System.out.println("Second test First method");
+    }
+    
+    @Test
+    @DisplayName("Second test")
+    void subTest() {
+        int c = FirstTest.sub(10,10);
+    	assertEquals(30,c);
+        System.out.println("Second test First method");
+    }
 }
+
